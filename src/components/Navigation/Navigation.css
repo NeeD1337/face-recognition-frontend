@@ -1,0 +1,23 @@
+.nav-button {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  padding: 8px 16px;
+  margin-left: 10px;
+  border: 2px solid white;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-family: 'Courier New', monospace;
+}
+
+.nav-button:hover {
+  font-weight: bold;
+  background: white;
+  color: #6a11cb; /* un violet modern */
+  box-shadow: 0 0 10px white;
+  transform: scale(1.08);
+}
