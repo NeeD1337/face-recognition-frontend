@@ -51,7 +51,7 @@ const App = () => {
 const onButtonSubmit = () => {
   setImageUrl(input);
 
-  fetch(`${import.meta.env.VITE_API_URL}/clarifai`, {
+  fetch('https://face-recognition-backend-znpe.onrender.com/clarifai', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ input: input }),
@@ -59,7 +59,7 @@ const onButtonSubmit = () => {
     .then(response => response.json())
     .then(result => {
       if (result) {
-        fetch(`${import.meta.env.VITE_API_URL}/image`, {
+        fetch('https://face-recognition-backend-znpe.onrender.com/image', {
           method: 'put',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ id: user.id }),

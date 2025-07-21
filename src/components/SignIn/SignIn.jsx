@@ -13,7 +13,7 @@ const SignIn = ({ onRouteChange, loadUser }) => {
   };
 
   const onSubmitSignIn = () => {
-    fetch(`${import.meta.env.VITE_API_URL}/signin`,{
+    fetch('https://face-recognition-backend-znpe.onrender.com/signin',{
       method:'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({

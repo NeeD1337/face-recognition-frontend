@@ -18,7 +18,7 @@ const Register = ({onRouteChange, loadUser}) => {
   }
 
     const onSubmitRegister = () => {
-    fetch(`${import.meta.env.VITE_API_URL}/register`,{
+    fetch('https://face-recognition-backend-znpe.onrender.com/register',{
       method:'post',
       headers: {'Content-Type': 'application/json'},
       body: JSON.stringify({
